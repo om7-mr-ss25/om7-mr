@@ -5,7 +5,7 @@ function protectContent() {
     // Check if the user has already entered the correct password
     if (!localStorage.getItem('accessGranted')) {
         const password = prompt('Please enter password:');
-        if (password === 'sm7-mr') {
+        if (password === 'om7-mr') {
             localStorage.setItem('accessGranted', true);
         } else {
             document.body.innerHTML = 'Wrong password';

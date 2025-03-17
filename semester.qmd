@@ -1,5 +1,6 @@
 ---
-title: "Semester overview"
+title: "Weekly overview"
+toc: true
 ---
 
 
@@ -8,8 +9,12 @@ title: "Semester overview"
 ### Market Research
 
 First Data Analysis
+Programming Toolkit
 
-#### Analyze Netflix Data with Excel
+#### Analyze Netflix Data 
+
+
+A) Using Excel
 
 *[Here](https://support.microsoft.com/en-us/office/create-a-pivottable-to-analyze-worksheet-data-a9a84538-bfe9-40a9-a8e9-f99134456576) you can find instructions on how to create Pivot Tables.*
 
@@ -20,9 +25,13 @@ Descriptive analysis of Netflix data:
 3. Open Excel, go to the "Home" menu, and click on "Analyze Data."  
 
 
-#### Analyze Netflix Data with Generative AI
+---
 
-Perform the anlysis of the data with [Claude](https://claude.ai/new) from Anthropic.
+B) Using Python (see code in semester overview)
+
+---
+
+C) Using Generative AI: Perform the anlysis of the data with [Claude](https://claude.ai/new) from Anthropic.
 
 
 ---
@@ -31,8 +40,6 @@ Perform the anlysis of the data with [Claude](https://claude.ai/new) from Anthro
 ### Statistics
 
 Data basics
-
-[☑️](https://forms.gle/EJT7mcYgPi8drKgR9)
 
 
 ---

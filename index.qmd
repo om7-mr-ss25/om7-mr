@@ -6,11 +6,9 @@ title: "OM7 Market Research"
 
 Welcome to our module Market Research (337094)! 👋  
 
-This page contains an outline of the topics and content for the semester. 
-
-
 >The numbers have no way of speaking for themselves. We speak for them. Nate Silver
 
+This page contains an outline of the topics and content for the semester. 
 
 :::{.callout-note appearance="minimal"}
 Note that our schedule will be updated as the semester progresses.
@@ -31,7 +29,7 @@ library(googlesheets4)
 library(gt)
 library(tidyverse)
 gs4_deauth()
-d <- read_sheet("https://docs.google.com/spreadsheets/d/1JIPpzN4EKvWO21YB7rzk9xSushNlbxKgDiVJVMiMqwk/edit?usp=sharing")
+d <- read_sheet("https://docs.google.com/spreadsheets/d/1CRW5o9ZbL4Dbs04G5zT8dlSdMQ2qN5IDRQEu7srH2zM/edit?usp=sharing")
 ```
 
 
