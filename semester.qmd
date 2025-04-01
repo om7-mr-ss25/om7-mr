@@ -43,3 +43,26 @@ Data basics
 
 
 ---
+
+## Week 2
+
+no data
+
+## Week 3
+
+### Bar Chart
+
+```python
+import pandas as pd
+import altair as alt
+```
+
+```python
+
+ROOT = "https://raw.githubusercontent.com/kirenz/datasets/master/"
+DATA = "loan50.csv"
+
+df = pd.read_csv(ROOT + DATA)
+```
+
+
