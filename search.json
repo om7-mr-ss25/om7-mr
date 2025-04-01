@@ -84,6 +84,30 @@
     ]
   },
   {
+    "objectID": "semester.html#week-2",
+    "href": "semester.html#week-2",
+    "title": "Weekly overview",
+    "section": "Week 2",
+    "text": "Week 2\nno data",
+    "crumbs": [
+      "Home",
+      "Course information",
+      "Weekly Overview"
+    ]
+  },
+  {
+    "objectID": "semester.html#week-3",
+    "href": "semester.html#week-3",
+    "title": "Weekly overview",
+    "section": "Week 3",
+    "text": "Week 3\n\nBar Chart\nimport pandas as pd\nimport altair as alt\n\nROOT = \"https://raw.githubusercontent.com/kirenz/datasets/master/\"\nDATA = \"loan50.csv\"\n\ndf = pd.read_csv(ROOT + DATA)",
+    "crumbs": [
+      "Home",
+      "Course information",
+      "Weekly Overview"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "OM7 Market Research",
