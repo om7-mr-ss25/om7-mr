@@ -57,6 +57,8 @@ import pandas as pd
 import altair as alt
 ```
 
+#### Import 
+
 ```python
 
 ROOT = "https://raw.githubusercontent.com/kirenz/datasets/master/"
@@ -65,4 +67,32 @@ DATA = "loan50.csv"
 df = pd.read_csv(ROOT + DATA)
 ```
 
+#### Simple bar chart
 
+```python
+alt.Chart(df).mark_bar().encode(
+    x='count()',
+    y='homeownership'
+)
+```
+
+#### Dodged bar chart
+
+```python
+alt.Chart(df).mark_bar().encode(
+    x='count()',
+    y='homeownership',
+    color='verified_income',
+)
+```
+
+#### Standardized bar chart
+
+```python
+alt.Chart(df).mark_bar().encode(
+    x=alt.X('count()', stack='normalize'),
+    y='homeownership',
+    color='verified_income',
+    tooltip=['count(verified_income)']
+).interactive()
+```
