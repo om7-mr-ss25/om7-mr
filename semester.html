@@ -212,6 +212,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#bar-chart" id="toc-bar-chart" class="nav-link" data-scroll-target="#bar-chart">Bar Chart</a></li>
   </ul></li>
+  <li><a href="#week-4" id="toc-week-4" class="nav-link" data-scroll-target="#week-4">Week 4</a>
+  <ul class="collapse">
+  <li><a href="#data-analysis-with-pandas" id="toc-data-analysis-with-pandas" class="nav-link" data-scroll-target="#data-analysis-with-pandas">Data Analysis with Pandas</a></li>
+  <li><a href="#contingency-tables-code" id="toc-contingency-tables-code" class="nav-link" data-scroll-target="#contingency-tables-code">Contingency tables code</a></li>
+  <li><a href="#scatter-plot-mean-and-median" id="toc-scatter-plot-mean-and-median" class="nav-link" data-scroll-target="#scatter-plot-mean-and-median">Scatter plot, mean and median</a></li>
+  </ul></li>
+  <li><a href="#week-5" id="toc-week-5" class="nav-link" data-scroll-target="#week-5">Week 5</a>
+  <ul class="collapse">
+  <li><a href="#market-research-1" id="toc-market-research-1" class="nav-link" data-scroll-target="#market-research-1">Market Research</a></li>
+  <li><a href="#statistics-1" id="toc-statistics-1" class="nav-link" data-scroll-target="#statistics-1">Statistics</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -275,6 +286,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="week-2" class="level2">
 <h2 class="anchored" data-anchor-id="week-2">Week 2</h2>
 <p>no data</p>
+<hr>
 </section>
 <section id="week-3" class="level2">
 <h2 class="anchored" data-anchor-id="week-3">Week 3</h2>
@@ -313,9 +325,111 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    color<span class="op">=</span><span class="st">'verified_income'</span>,</span>
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    tooltip<span class="op">=</span>[<span class="st">'count(verified_income)'</span>]</span>
 <span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>).interactive()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
-
+<hr>
 </section>
+</section>
+</section>
+<section id="week-4" class="level2">
+<h2 class="anchored" data-anchor-id="week-4">Week 4</h2>
+<section id="data-analysis-with-pandas" class="level3">
+<h3 class="anchored" data-anchor-id="data-analysis-with-pandas">Data Analysis with Pandas</h3>
+<ul>
+<li><a href="https://docs.google.com/document/d/1WdljZoBXHJZVxT0Mx1p35NYv-eo8gBK3GKBO805zQUI/edit?tab=t.giq9efy8ifmm#heading=h.g1jll8im57cr">💻 Pandas Lab Survey (code)</a></li>
+</ul>
+</section>
+<section id="contingency-tables-code" class="level3">
+<h3 class="anchored" data-anchor-id="contingency-tables-code">Contingency tables code</h3>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> altair <span class="im">as</span> alt</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>ROOT <span class="op">=</span> <span class="st">"https://raw.githubusercontent.com/kirenz/datasets/master/"</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>DATA <span class="op">=</span> <span class="st">"loans.csv"</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(ROOT <span class="op">+</span> DATA)</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Einfache Tabelle</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>pd.crosstab(</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">'application_type'</span>],</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">'homeownership'</span>],</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    margins<span class="op">=</span><span class="va">True</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Tabelle mit Prozent</span></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>pd.crosstab(</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">'application_type'</span>],</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">'homeownership'</span>],</span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>    margins<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>    normalize<span class="op">=</span><span class="va">True</span></span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Kreuztabelle, Zeilenprozent</span></span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>pd.crosstab(</span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">'application_type'</span>],</span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">'homeownership'</span>],</span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a>    margins<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a>    normalize<span class="op">=</span><span class="st">'index'</span></span>
+<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a><span class="co"># Kreuztabelle, Spaltenprozent</span></span>
+<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a>pd.crosstab(</span>
+<span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">'application_type'</span>],</span>
+<span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a>    df[<span class="st">'homeownership'</span>],</span>
+<span id="cb6-37"><a href="#cb6-37" aria-hidden="true" tabindex="-1"></a>    margins<span class="op">=</span><span class="va">True</span>,</span>
+<span id="cb6-38"><a href="#cb6-38" aria-hidden="true" tabindex="-1"></a>    normalize<span class="op">=</span><span class="st">'columns'</span></span>
+<span id="cb6-39"><a href="#cb6-39" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="scatter-plot-mean-and-median" class="level3">
+<h3 class="anchored" data-anchor-id="scatter-plot-mean-and-median">Scatter plot, mean and median</h3>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> altair <span class="im">as</span> alt</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>ROOT <span class="op">=</span> <span class="st">"https://raw.githubusercontent.com/kirenz/datasets/master/"</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>DATA <span class="op">=</span> <span class="st">"loan50.csv"</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(ROOT <span class="op">+</span> DATA)</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Scatter-Plot</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>alt.Chart(df).mark_point().encode(</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span><span class="st">'annual_income'</span>,</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span><span class="st">'loan_amount'</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Mittelwert und Median</span></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df[<span class="st">'annual_income'</span>].mean())</span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'The mean is: </span><span class="sc">{</span>df[<span class="st">'annual_income'</span>]<span class="sc">.</span>mean()<span class="sc">}</span><span class="ss">'</span>)</span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df[<span class="st">'annual_income'</span>].median())</span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>df[[<span class="st">'annual_income'</span>, <span class="st">'loan_amount'</span>]].describe().T</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+</section>
+</section>
+<section id="week-5" class="level2">
+<h2 class="anchored" data-anchor-id="week-5">Week 5</h2>
+<section id="market-research-1" class="level3">
+<h3 class="anchored" data-anchor-id="market-research-1">Market Research</h3>
+<p>Download the survey results (with optimized column names) from Moodle: <a href="https://moodle.hdm-stuttgart.de/mod/resource/view.php?id=369571">Data df_clean.csv</a></p>
+<p>Use Excel:</p>
+<ul>
+<li>Analyze the variable <code>soziale_medien</code>: Calculate the mean, median, and mode.</li>
+</ul>
+</section>
+<section id="statistics-1" class="level3">
+<h3 class="anchored" data-anchor-id="statistics-1">Statistics</h3>
+<p>Task 1:</p>
+<p>Download the loans data as excel file: <a href="https://docs.google.com/spreadsheets/d/1SJhTA9rAS1EDz-eqXJOut54olPJJqOydJJ6sDD91ujA/edit?gid=0#gid=0">Data</a></p>
+<p>Create a histogram for the variable annual_income</p>
+<p>Task 2:</p>
+<p>Download the data as Excel-file; <a href="https://docs.google.com/spreadsheets/d/1xXhRBbKjqlglrUUdRKWhwG5XiMKQsbGqOagLara3V0k/edit#gid=0">Data</a></p>
+
+
 </section>
 </section>
 

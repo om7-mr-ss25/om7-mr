@@ -108,6 +108,30 @@
     ]
   },
   {
+    "objectID": "semester.html#week-4",
+    "href": "semester.html#week-4",
+    "title": "Weekly overview",
+    "section": "Week 4",
+    "text": "Week 4\n\nData Analysis with Pandas\n\n💻 Pandas Lab Survey (code)\n\n\n\nContingency tables code\nimport altair as alt\nimport pandas as pd\n\nROOT = \"https://raw.githubusercontent.com/kirenz/datasets/master/\"\nDATA = \"loans.csv\"\n\ndf = pd.read_csv(ROOT + DATA)\n\n# Einfache Tabelle\npd.crosstab(\n    df['application_type'],\n    df['homeownership'],\n    margins=True\n)\n\n# Tabelle mit Prozent\npd.crosstab(\n    df['application_type'],\n    df['homeownership'],\n    margins=True,\n    normalize=True\n)\n\n# Kreuztabelle, Zeilenprozent\n\npd.crosstab(\n    df['application_type'],\n    df['homeownership'],\n    margins=True,\n    normalize='index'\n)\n# Kreuztabelle, Spaltenprozent\n\npd.crosstab(\n    df['application_type'],\n    df['homeownership'],\n    margins=True,\n    normalize='columns'\n)\n\n\nScatter plot, mean and median\nimport altair as alt\nimport pandas as pd\n\nROOT = \"https://raw.githubusercontent.com/kirenz/datasets/master/\"\nDATA = \"loan50.csv\"\n\ndf = pd.read_csv(ROOT + DATA)\n\n\n# Scatter-Plot\n\nalt.Chart(df).mark_point().encode(\n    x='annual_income',\n    y='loan_amount'\n)\n\n# Mittelwert und Median\n\n\nprint(df['annual_income'].mean())\n\nprint(f'The mean is: {df['annual_income'].mean()}')\n\nprint(df['annual_income'].median())\n\n\ndf[['annual_income', 'loan_amount']].describe().T",
+    "crumbs": [
+      "Home",
+      "Course information",
+      "Weekly Overview"
+    ]
+  },
+  {
+    "objectID": "semester.html#week-5",
+    "href": "semester.html#week-5",
+    "title": "Weekly overview",
+    "section": "Week 5",
+    "text": "Week 5\n\nMarket Research\nDownload the survey results (with optimized column names) from Moodle: Data df_clean.csv\nUse Excel:\n\nAnalyze the variable soziale_medien: Calculate the mean, median, and mode.\n\n\n\nStatistics\nTask 1:\nDownload the loans data as excel file: Data\nCreate a histogram for the variable annual_income\nTask 2:\nDownload the data as Excel-file; Data",
+    "crumbs": [
+      "Home",
+      "Course information",
+      "Weekly Overview"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "OM7 Market Research",
