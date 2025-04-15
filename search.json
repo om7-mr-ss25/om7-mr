@@ -124,7 +124,7 @@
     "href": "semester.html#week-5",
     "title": "Weekly overview",
     "section": "Week 5",
-    "text": "Week 5\n\nMarket Research\nDownload the survey results (with optimized column names) from Moodle: Data df_clean.csv\nUse 1) Excel 2) Jupyter Notebook:\n\nAnalyze the variable soziale_medien: Calculate the mean, median, and mode.\n\n\n\nStatistics",
+    "text": "Week 5\n\nMarket Research\nDownload the survey results (with optimized column names) from Moodle: Data df_clean.csv\nUse 1) Excel 2) Jupyter Notebook:\n\nAnalyze the variable soziale_medien: Calculate the mean, median, and mode.\n\n\n\nStatistics\n\nMeta Ads data\n\nDownload the data as CSV and import in Jupyter Notebook.",
     "crumbs": [
       "Home",
       "Course information",
