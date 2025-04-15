@@ -196,9 +196,10 @@ df[['annual_income', 'loan_amount']].describe().T
 
 Download the survey results (with optimized column names) from Moodle: [Data df_clean.csv](https://moodle.hdm-stuttgart.de/mod/resource/view.php?id=369571)
 
-Use Excel:
+Use 1) Excel 2) Jupyter Notebook:
 
 - Analyze the variable `soziale_medien`: Calculate the mean, median, and mode.
+
 
 
 ### Statistics
