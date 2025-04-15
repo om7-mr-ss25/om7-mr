@@ -48,6 +48,8 @@ Data basics
 
 no data
 
+---
+
 ## Week 3
 
 ### Bar Chart
@@ -96,3 +98,118 @@ alt.Chart(df).mark_bar().encode(
     tooltip=['count(verified_income)']
 ).interactive()
 ```
+
+---
+
+## Week 4 
+
+### Data Analysis with Pandas
+
+- [💻 Pandas Lab Survey (code)](https://docs.google.com/document/d/1WdljZoBXHJZVxT0Mx1p35NYv-eo8gBK3GKBO805zQUI/edit?tab=t.giq9efy8ifmm#heading=h.g1jll8im57cr)
+
+
+### Contingency tables code
+
+
+```python
+import altair as alt
+import pandas as pd
+
+ROOT = "https://raw.githubusercontent.com/kirenz/datasets/master/"
+DATA = "loans.csv"
+
+df = pd.read_csv(ROOT + DATA)
+
+# Einfache Tabelle
+pd.crosstab(
+    df['application_type'],
+    df['homeownership'],
+    margins=True
+)
+
+# Tabelle mit Prozent
+pd.crosstab(
+    df['application_type'],
+    df['homeownership'],
+    margins=True,
+    normalize=True
+)
+
+# Kreuztabelle, Zeilenprozent
+
+pd.crosstab(
+    df['application_type'],
+    df['homeownership'],
+    margins=True,
+    normalize='index'
+)
+# Kreuztabelle, Spaltenprozent
+
+pd.crosstab(
+    df['application_type'],
+    df['homeownership'],
+    margins=True,
+    normalize='columns'
+)
+```
+
+### Scatter plot, mean and median
+
+
+```python
+import altair as alt
+import pandas as pd
+
+ROOT = "https://raw.githubusercontent.com/kirenz/datasets/master/"
+DATA = "loan50.csv"
+
+df = pd.read_csv(ROOT + DATA)
+
+
+# Scatter-Plot
+
+alt.Chart(df).mark_point().encode(
+    x='annual_income',
+    y='loan_amount'
+)
+
+# Mittelwert und Median
+
+
+print(df['annual_income'].mean())
+
+print(f'The mean is: {df['annual_income'].mean()}')
+
+print(df['annual_income'].median())
+
+
+df[['annual_income', 'loan_amount']].describe().T
+
+```
+
+
+---
+
+## Week 5
+
+### Market Research
+
+Download the survey results (with optimized column names) from Moodle: [Data df_clean.csv](https://moodle.hdm-stuttgart.de/mod/resource/view.php?id=369571)
+
+Use Excel:
+
+- Analyze the variable `soziale_medien`: Calculate the mean, median, and mode.
+
+
+### Statistics
+
+Task 1:
+
+Download the loans data as excel file: [Data](https://docs.google.com/spreadsheets/d/1SJhTA9rAS1EDz-eqXJOut54olPJJqOydJJ6sDD91ujA/edit?gid=0#gid=0)
+
+Create a histogram for the variable annual_income
+
+
+Task 2:
+
+Download the data as Excel-file; [Data](https://docs.google.com/spreadsheets/d/1xXhRBbKjqlglrUUdRKWhwG5XiMKQsbGqOagLara3V0k/edit#gid=0) 
