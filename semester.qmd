@@ -203,6 +203,13 @@ Use 1) Excel 2) Jupyter Notebook:
 
 ### Statistics
 
+- [Meta Ads data](https://docs.google.com/spreadsheets/d/1u-Nk_6xBlRqxtbpe2jokK9GnH1cpWQkGWXXrUj--MlA/edit?usp=sharing)
+
+Download the data as CSV and import in Jupyter Notebook.
+
+
+
+
 <!-- Task 1:
 
 Download the loans data as excel file: [Data](https://docs.google.com/spreadsheets/d/1SJhTA9rAS1EDz-eqXJOut54olPJJqOydJJ6sDD91ujA/edit?gid=0#gid=0)
