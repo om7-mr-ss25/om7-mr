@@ -208,6 +208,9 @@ Use 1) Excel 2) Jupyter Notebook:
 Download the data as CSV and import in Jupyter Notebook.
 
 
+## Week 6
+
+
 
 
 <!-- Task 1:
