@@ -1,5 +1,17 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "OM7 Market Research",
+    "section": "",
+    "text": "Welcome to our module Market Research (337094)! 👋\n\nThe numbers have no way of speaking for themselves. We speak for them. Nate Silver\n\nThis page contains an outline of the topics and content for the semester.\n\n\n\n\n\n\nNote that our schedule will be updated as the semester progresses.\n\n\n\nMoodle-course\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nSECTION\nTOPIC\nMATERIALS\nLECTURE\n\n\n\n\n1\nTue, Mar 18\n\n\nFirst Data Analysis\n📑 | 💻\nMarket Research\n\n\n\n\nTue, Mar 18\n\n\nProgramming toolkit\n📑\nMarket Research\n\n\n\n\nTue, Mar 18\nHello Data\nData Basics\n📑 | ☑️\nStatistics\n\n\n2\nTue, Mar 25\nHello Data\nData Basics\n📑 | ☑️\nStatistics\n\n\n\n\nTue, Mar 25\n\n\nCreate a Survey\n📑\nMarket Research\n\n\n3\nTue, Apr 1\nHello Data\nPopulation and Sample\n📑\nMarket Research\n\n\n\n\nTue, Apr 1\nHello Data\nSampling methods\n📑\nMarket Research\n\n\n\n\nTue, Apr 1\nHello Data\nExperiments\n📑\nMarket Research\n\n\n\n\nTue, Apr 1\nExploratory Data Analysis\nLoans data\n📑 | 💾\nStatistics\n\n\n\n\nTue, Apr 1\nExploratory Data Analysis\nSimple bar chart\n📑\nStatistics\n\n\n\n\nTue, Apr 1\nExploratory Data Analysis\nDodged bar plot\n📑\nStatistics\n\n\n\n\nTue, Apr 1\nExploratory Data Analysis\nStacked bar plot\n📑\nStatistics\n\n\n\n\nTue, Apr 1\nExploratory Data Analysis\nStandardized bar plot\n📑\nStatistics\n\n\n4\nTue, Apr 8\nHello Data\nObservational studies\n📑\nMarket Research\n\n\n\n\nTue, Apr 8\nData Analysis with Pandas\nData Analysis (survey data)\n📑 | 💻\nMarket Research\n\n\n\n\nTue, Apr 8\nExploratory Data Analysis (categorical data)\nPie charts and more\n📑\nStatistics\n\n\n\n\nTue, Apr 8\nExploratory Data Analysis (categorical data)\nContingency tables\n📑\nStatistics\n\n\n\n\nTue, Apr 8\nExploratory Data Analysis (numerical data)\nScatter plot\n📑\nStatistics\n\n\n\n\nTue, Apr 8\nExploratory Data Analysis (numerical data)\nMean Median and Mode\n📑\nStatistics\n\n\n5\nTue, Apr 15\nData Analysis with Excel and Pandas\nData Analysis (survey data df_clean)\n\n\nMarket Research\n\n\n\n\nTue, Apr 15\nExploratory Data Analysis (numerical data)\nVariance and standard deviation\n📑\nMarket Research\n\n\n\n\nTue, Apr 15\nExploratory Data Analysis (numerical data)\nHistogram\n📑\nStatistics\n\n\n\n\nTue, Apr 15\nExploratory Data Analysis\nBox plot\n📑\nStatistics\n\n\n6\nTue, Apr 22\nExploratory Data Analysis\nRobust statistics and transformations\n📑\nMarket Research\n\n\n\n\nTue, Apr 22\nExploratory Data Analysis\nComparing numerical data across groups\n📑\nMarket Research\n\n\n\n\nTue, Apr 22\nExploratory Data Analysis\nCommunication\n📑\nStatistics\n\n\n7\nTue, May 6\nRegression Modelling\nSales and ads\n📑\nMarket Research\n\n\n\n\nTue, May 6\n📑\nMean squared error\n📑 | Data ads 2\nMarket Research\n\n\n\n\nTue, May 6\nE-exam preparation\nE-Exam Vorbereitung\nMoodle\nStatistics",
+    "crumbs": [
+      "Home",
+      "Course information",
+      "Semester Overview"
+    ]
+  },
+  {
     "objectID": "syllabus.html",
     "href": "syllabus.html",
     "title": "Syllabus",
@@ -141,18 +153,6 @@
       "Home",
       "Course information",
       "Weekly Overview"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "OM7 Market Research",
-    "section": "",
-    "text": "Welcome to our module Market Research (337094)! 👋\n\nThe numbers have no way of speaking for themselves. We speak for them. Nate Silver\n\nThis page contains an outline of the topics and content for the semester.\n\n\n\n\n\n\nNote that our schedule will be updated as the semester progresses.\n\n\n\nMoodle-course\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nSECTION\nTOPIC\nMATERIALS\nLECTURE\n\n\n\n\n1\nTue, Mar 18\n\n\nFirst Data Analysis\n📑 | 💻\nMarket Research\n\n\n\n\nTue, Mar 18\n\n\nProgramming toolkit\n📑\nMarket Research\n\n\n\n\nTue, Mar 18\nHello Data\nData Basics\n📑 | ☑️\nStatistics\n\n\n2\nTue, Mar 25\nHello Data\nData Basics\n📑 | ☑️\nStatistics\n\n\n\n\nTue, Mar 25\n\n\nCreate a Survey\n📑\nMarket Research\n\n\n3\nTue, Apr 1\nHello Data\nPopulation and Sample\n📑\nMarket Research\n\n\n\n\nTue, Apr 1\nHello Data\nSampling methods\n📑\nMarket Research\n\n\n\n\nTue, Apr 1\nHello Data\nExperiments\n📑\nMarket Research\n\n\n\n\nTue, Apr 1\nExploratory Data Analysis\nLoans data\n📑 | 💾\nStatistics\n\n\n\n\nTue, Apr 1\nExploratory Data Analysis\nSimple bar chart\n📑\nStatistics\n\n\n\n\nTue, Apr 1\nExploratory Data Analysis\nDodged bar plot\n📑\nStatistics\n\n\n\n\nTue, Apr 1\nExploratory Data Analysis\nStacked bar plot\n📑\nStatistics\n\n\n\n\nTue, Apr 1\nExploratory Data Analysis\nStandardized bar plot\n📑\nStatistics\n\n\n4\nTue, Apr 8\nHello Data\nObservational studies\n📑\nMarket Research\n\n\n\n\nTue, Apr 8\nData Analysis with Pandas\nData Analysis (survey data)\n📑 | 💻\nMarket Research\n\n\n\n\nTue, Apr 8\nExploratory Data Analysis (categorical data)\nPie charts and more\n📑\nStatistics\n\n\n\n\nTue, Apr 8\nExploratory Data Analysis (categorical data)\nContingency tables\n📑\nStatistics\n\n\n\n\nTue, Apr 8\nExploratory Data Analysis (numerical data)\nScatter plot\n📑\nStatistics\n\n\n\n\nTue, Apr 8\nExploratory Data Analysis (numerical data)\nMean Median and Mode\n📑\nStatistics\n\n\n5\nTue, Apr 15\nData Analysis with Excel and Pandas\nData Analysis (survey data df_clean)\n\n\nMarket Research\n\n\n\n\nTue, Apr 15\nExploratory Data Analysis (numerical data)\nVariance and standard deviation\n📑\nMarket Research\n\n\n\n\nTue, Apr 15\nExploratory Data Analysis (numerical data)\nHistogram\n📑\nStatistics\n\n\n\n\nTue, Apr 15\nExploratory Data Analysis\nBox plot\n📑\nStatistics\n\n\n6\nTue, Apr 22\nExploratory Data Analysis\nRobust statistics and transformations\n📑\nMarket Research\n\n\n\n\nTue, Apr 22\nExploratory Data Analysis\nComparing numerical data across groups\n📑\nMarket Research\n\n\n\n\nTue, Apr 22\nExploratory Data Analysis\nCommunication\n📑\nStatistics",
-    "crumbs": [
-      "Home",
-      "Course information",
-      "Semester Overview"
     ]
   }
 ]
