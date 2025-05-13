@@ -244,6 +244,8 @@ Task:
 
 - Develop a regression model and show its equation.
 
+- Make a prediction for ads spending of 20000 
+
 **Python**
 
 - Perform the same tasks using Python
