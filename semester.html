@@ -259,7 +259,13 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#statistics-2" id="toc-statistics-2" class="nav-link" data-scroll-target="#statistics-2">Statistics</a></li>
   </ul></li>
-  <li><a href="#week-9" id="toc-week-9" class="nav-link" data-scroll-target="#week-9">Week 9</a></li>
+  <li><a href="#week-9" id="toc-week-9" class="nav-link" data-scroll-target="#week-9">Week 9</a>
+  <ul class="collapse">
+  <li><a href="#regression-social-media-campaign" id="toc-regression-social-media-campaign" class="nav-link" data-scroll-target="#regression-social-media-campaign">Regression Social Media Campaign</a></li>
+  <li><a href="#strength-of-fit" id="toc-strength-of-fit" class="nav-link" data-scroll-target="#strength-of-fit">Strength of fit</a></li>
+  <li><a href="#mario-kart" id="toc-mario-kart" class="nav-link" data-scroll-target="#mario-kart">Mario Kart</a></li>
+  <li><a href="#multiple-regression" id="toc-multiple-regression" class="nav-link" data-scroll-target="#multiple-regression">Multiple Regression</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -501,7 +507,8 @@ Download the data as Excel-file; [Data](https://docs.google.com/spreadsheets/d/1
 </section>
 <section id="week-9" class="level2">
 <h2 class="anchored" data-anchor-id="week-9">Week 9</h2>
-<p>Task: Regression Analysis Exercise: Social Media Campaign Success:</p>
+<section id="regression-social-media-campaign" class="level3">
+<h3 class="anchored" data-anchor-id="regression-social-media-campaign">Regression Social Media Campaign</h3>
 <p><strong>Data</strong>: <a href="https://docs.google.com/spreadsheets/d/1r76Qa87HicgHV2ZVFaVBGQnn5WwZPIVRyqYxu2yS7_s/edit?usp=sharing">Download the data to Excel</a></p>
 <p><strong>Objective:</strong> Analyze factors influencing the success of a social media campaign using regression in Excel.</p>
 <p><strong>Dataset Variables:</strong></p>
@@ -534,8 +541,65 @@ Download the data as Excel-file; [Data](https://docs.google.com/spreadsheets/d/1
 <li>What are the practical implications for managing a social media campaign based on your findings?</li>
 </ul></li>
 </ol>
+</section>
+<section id="strength-of-fit" class="level3">
+<h3 class="anchored" data-anchor-id="strength-of-fit">Strength of fit</h3>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> altair <span class="im">as</span> alt</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> r2_score</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LinearRegression</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="co">## Import data</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    {<span class="st">'sales'</span>: [<span class="dv">2500</span>, <span class="dv">4500</span>, <span class="dv">6500</span>, <span class="dv">8500</span>, <span class="dv">10500</span>, <span class="dv">12500</span>, <span class="dv">14500</span>, <span class="dv">16500</span>, <span class="dv">18500</span>, <span class="dv">20500</span>],</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>      <span class="st">'ads'</span>  : [<span class="dv">900</span>, <span class="dv">1400</span>, <span class="dv">3600</span>, <span class="dv">3800</span>, <span class="dv">6200</span>, <span class="dv">5200</span>, <span class="dv">6800</span>, <span class="dv">8300</span>, <span class="dv">9800</span>, <span class="dv">10100</span>]}</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a><span class="co">## Plot data</span></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>chart <span class="op">=</span> alt.Chart(df).mark_point().encode(</span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span><span class="st">'ads'</span>,</span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>    y<span class="op">=</span><span class="st">'sales'</span></span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>chart <span class="op">+</span> chart.transform_regression(<span class="st">'ads'</span>, <span class="st">'sales'</span>, extent<span class="op">=</span>[<span class="dv">0</span>, <span class="dv">12000</span>]).mark_line()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="mario-kart" class="level3">
+<h3 class="anchored" data-anchor-id="mario-kart">Mario Kart</h3>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> altair <span class="im">as</span> alt</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LinearRegression</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> mean_squared_error</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> r2_score</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">'https://raw.githubusercontent.com/kirenz/datasets/master/mariokart.csv'</span>)</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Data preparation steps</p>
+<ul>
+<li>we only need cond and total_pr</li>
+<li>only keep games with total price below 100</li>
+<li>make a copy of our original dataframe (before we change the data). Call it df_orig</li>
+<li>Convert categorical into binary numeric format (<code>.get_dummies()</code>)</li>
+<li>we only keep condition new (1=new and 0=used)</li>
+</ul>
+</section>
+<section id="multiple-regression" class="level3">
+<h3 class="anchored" data-anchor-id="multiple-regression">Multiple Regression</h3>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LinearRegression</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> mean_squared_error</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">'https://raw.githubusercontent.com/kirenz/datasets/master/loans.csv'</span>)</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
