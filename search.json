@@ -1,77 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "OM7 Market Research",
-    "section": "",
-    "text": "Welcome to our module Market Research (337094)! 👋\n\nThe numbers have no way of speaking for themselves. We speak for them. Nate Silver\n\nThis page contains an outline of the topics and content for the semester.\n\n\n\n\n\n\nNote that our schedule will be updated as the semester progresses.\n\n\n\nMoodle-course\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nSECTION\nTOPIC\nMATERIALS\nLECTURE\n\n\n\n\n1\nTue, Mar 18\n\n\nFirst Data Analysis\n📑 | 💻\nMarket Research\n\n\n\n\nTue, Mar 18\n\n\nProgramming toolkit\n📑\nMarket Research\n\n\n\n\nTue, Mar 18\nHello Data\nData Basics\n📑 | ☑️\nStatistics\n\n\n2\nTue, Mar 25\nHello Data\nData Basics\n📑 | ☑️\nStatistics\n\n\n\n\nTue, Mar 25\n\n\nCreate a Survey\n📑\nMarket Research\n\n\n3\nTue, Apr 1\nHello Data\nPopulation and Sample\n📑\nMarket Research\n\n\n\n\nTue, Apr 1\nHello Data\nSampling methods\n📑\nMarket Research\n\n\n\n\nTue, Apr 1\nHello Data\nExperiments\n📑\nMarket Research\n\n\n\n\nTue, Apr 1\nExploratory Data Analysis\nLoans data\n📑 | 💾\nStatistics\n\n\n\n\nTue, Apr 1\nExploratory Data Analysis\nSimple bar chart\n📑\nStatistics\n\n\n\n\nTue, Apr 1\nExploratory Data Analysis\nDodged bar plot\n📑\nStatistics\n\n\n\n\nTue, Apr 1\nExploratory Data Analysis\nStacked bar plot\n📑\nStatistics\n\n\n\n\nTue, Apr 1\nExploratory Data Analysis\nStandardized bar plot\n📑\nStatistics\n\n\n4\nTue, Apr 8\nHello Data\nObservational studies\n📑\nMarket Research\n\n\n\n\nTue, Apr 8\nData Analysis with Pandas\nData Analysis (survey data)\n📑 | 💻\nMarket Research\n\n\n\n\nTue, Apr 8\nExploratory Data Analysis (categorical data)\nPie charts and more\n📑\nStatistics\n\n\n\n\nTue, Apr 8\nExploratory Data Analysis (categorical data)\nContingency tables\n📑\nStatistics\n\n\n\n\nTue, Apr 8\nExploratory Data Analysis (numerical data)\nScatter plot\n📑\nStatistics\n\n\n\n\nTue, Apr 8\nExploratory Data Analysis (numerical data)\nMean Median and Mode\n📑\nStatistics\n\n\n5\nTue, Apr 15\nData Analysis with Excel and Pandas\nData Analysis (survey data df_clean)\n\n\nMarket Research\n\n\n\n\nTue, Apr 15\nExploratory Data Analysis (numerical data)\nVariance and standard deviation\n📑\nMarket Research\n\n\n\n\nTue, Apr 15\nExploratory Data Analysis (numerical data)\nHistogram\n📑\nStatistics\n\n\n\n\nTue, Apr 15\nExploratory Data Analysis\nBox plot\n📑\nStatistics\n\n\n6\nTue, Apr 22\nExploratory Data Analysis\nRobust statistics and transformations\n📑\nMarket Research\n\n\n\n\nTue, Apr 22\nExploratory Data Analysis\nComparing numerical data across groups\n📑\nMarket Research\n\n\n\n\nTue, Apr 22\nExploratory Data Analysis\nCommunication\n📑\nStatistics\n\n\n7\nTue, May 6\nRegression Modelling\nSales and ads\n📑\nMarket Research\n\n\n\n\nTue, May 6\nRegression Modelling\nMean squared error\n📑\nMarket Research\n\n\n\n\nTue, May 6\nE-exam preparation\nE-exam preparation\nMoodle\nStatistics\n\n\n8\nTue, May 13\nRegression Modelling\nExample task with data ads 2\nSee weekly overview\nStatistics\n\n\n\n\nTue, May 13\nRegression Modelling\nFitting a line and residuals\n📑\nStatistics\n\n\n\n\nTue, May 13\nRegression Modelling\nCorrelation\n📑\nMarket Research\n\n\n\n\nTue, May 13\nRegression Modelling\nLeast squares regression\n📑\nMarket Research\n\n\n9\nTue, May 20\nRegression Modelling\nR squared (strenght of fit)\n📑\n\n\n\n\n\n\nTue, May 20\nRegression Modelling\nCategorical predictors with two levels\n📑",
-    "crumbs": [
-      "Home",
-      "Course information",
-      "Semester Overview"
-    ]
-  },
-  {
-    "objectID": "syllabus.html",
-    "href": "syllabus.html",
-    "title": "Syllabus",
-    "section": "",
-    "text": "Lecture\nDay\nTime\nLocation\n\n\n\n\nMarket Research\nTuesday\n08:15 - 09:45\nm034\n\n\nStatistics\nTuesday\n10:00 - 11:30\nm034",
-    "crumbs": [
-      "Home",
-      "Course information",
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "syllabus.html#course-info",
-    "href": "syllabus.html#course-info",
-    "title": "Syllabus",
-    "section": "",
-    "text": "Lecture\nDay\nTime\nLocation\n\n\n\n\nMarket Research\nTuesday\n08:15 - 09:45\nm034\n\n\nStatistics\nTuesday\n10:00 - 11:30\nm034",
-    "crumbs": [
-      "Home",
-      "Course information",
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "syllabus.html#learning-objectives",
-    "href": "syllabus.html#learning-objectives",
-    "title": "Syllabus",
-    "section": "Learning objectives",
-    "text": "Learning objectives\nBy the end of this module, students are able to:\n\nEffectively plan and execute market research projects\nUtilize tools like Excel and Python for data analysis\nClearly and effectively communicate results\nConduct experiments and hypothesis tests",
-    "crumbs": [
-      "Home",
-      "Course information",
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "syllabus.html#textbooks",
-    "href": "syllabus.html#textbooks",
-    "title": "Syllabus",
-    "section": "Textbooks",
-    "text": "Textbooks\nThis course is mainly based on the following resources:\n\nÇetinkaya-Rundel, M. & Hardin, J (2024). Introduction to Modern Statistics (2ed). OpenIntro. Inc.\nKnaflic, C. N. (2015). Storytelling with data: A data visualization guide for business professionals. Wiley.",
-    "crumbs": [
-      "Home",
-      "Course information",
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "syllabus.html#where-to-get-help",
-    "href": "syllabus.html#where-to-get-help",
-    "title": "Syllabus",
-    "section": "Where to get help",
-    "text": "Where to get help\n\nIf you have a question during lecture, feel free to ask it!\nOutside of class, any general questions about course content or assignments should be posted on the Moodle course forum.\nEmails should be reserved for questions not appropriate for the public forum. If you email me, please include the name of our course in the subject line.\n\n\nExam\nElectronic exam (90 minutes) at the end of the semester. 60% market research and 40% statistics.\nMore details about the electronic exam will be given during the semester.",
-    "crumbs": [
-      "Home",
-      "Course information",
-      "Syllabus"
-    ]
-  },
-  {
     "objectID": "semester.html",
     "href": "semester.html",
     "title": "Weekly overview",
@@ -165,6 +93,90 @@
       "Home",
       "Course information",
       "Weekly Overview"
+    ]
+  },
+  {
+    "objectID": "semester.html#week-9",
+    "href": "semester.html#week-9",
+    "title": "Weekly overview",
+    "section": "Week 9",
+    "text": "Week 9\nTask: Regression Analysis Exercise: Social Media Campaign Success:\nData: Download the data to Excel\nObjective: Analyze factors influencing the success of a social media campaign using regression in Excel.\nDataset Variables:\n\nRow: Observation number.\nConversions (Dependent Variable): Number of desired actions (e.g., sales, sign-ups) generated by the campaign.\nAdSpendEuro (Independent Variable): Amount spent on paid social media advertising for the campaign (in Euros).\nInfluencerMentions (Independent Variable): Number of mentions or dedicated posts by relevant influencers during the campaign.\nContentQualityScore (Independent Variable): A rating (scale 1-10) of the perceived quality and appeal of the social media content.\nPostReachOrganic (Independent Variable): The number of unique users who saw the campaign’s organic (non-paid) posts.\n\nTasks:\n\nExplore Data:\n\nCalculate descriptive statistics for Conversions (mean and standard deviation).\nCreate plots of Conversions vs. each independent variable. State your initial insights about relationships.\n\nPerform Regression (Excel Data Analysis):\n\nPredict different models using Conversions as an outcome variable. Obtain \\(R^2\\).\n\nInterpret Results:\n\nExplain \\(R^2\\) for each model\n\nDiscussion:\n\nWhich variables significantly impact conversions?\nWhat are the practical implications for managing a social media campaign based on your findings?",
+    "crumbs": [
+      "Home",
+      "Course information",
+      "Weekly Overview"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "OM7 Market Research",
+    "section": "",
+    "text": "Welcome to our module Market Research (337094)! 👋\n\nThe numbers have no way of speaking for themselves. We speak for them. Nate Silver\n\nThis page contains an outline of the topics and content for the semester.\n\n\n\n\n\n\nNote that our schedule will be updated as the semester progresses.\n\n\n\nMoodle-course\n\n\n\n\n\n\n\n\n\nWEEK\nDATE\nSECTION\nTOPIC\nMATERIALS\nLECTURE\n\n\n\n\n1\nTue, Mar 18\n\n\nFirst Data Analysis\n📑 | 💻\nMarket Research\n\n\n\n\nTue, Mar 18\n\n\nProgramming toolkit\n📑\nMarket Research\n\n\n\n\nTue, Mar 18\nHello Data\nData Basics\n📑 | ☑️\nStatistics\n\n\n2\nTue, Mar 25\nHello Data\nData Basics\n📑 | ☑️\nStatistics\n\n\n\n\nTue, Mar 25\n\n\nCreate a Survey\n📑\nMarket Research\n\n\n3\nTue, Apr 1\nHello Data\nPopulation and Sample\n📑\nMarket Research\n\n\n\n\nTue, Apr 1\nHello Data\nSampling methods\n📑\nMarket Research\n\n\n\n\nTue, Apr 1\nHello Data\nExperiments\n📑\nMarket Research\n\n\n\n\nTue, Apr 1\nExploratory Data Analysis\nLoans data\n📑 | 💾\nStatistics\n\n\n\n\nTue, Apr 1\nExploratory Data Analysis\nSimple bar chart\n📑\nStatistics\n\n\n\n\nTue, Apr 1\nExploratory Data Analysis\nDodged bar plot\n📑\nStatistics\n\n\n\n\nTue, Apr 1\nExploratory Data Analysis\nStacked bar plot\n📑\nStatistics\n\n\n\n\nTue, Apr 1\nExploratory Data Analysis\nStandardized bar plot\n📑\nStatistics\n\n\n4\nTue, Apr 8\nHello Data\nObservational studies\n📑\nMarket Research\n\n\n\n\nTue, Apr 8\nData Analysis with Pandas\nData Analysis (survey data)\n📑 | 💻\nMarket Research\n\n\n\n\nTue, Apr 8\nExploratory Data Analysis (categorical data)\nPie charts and more\n📑\nStatistics\n\n\n\n\nTue, Apr 8\nExploratory Data Analysis (categorical data)\nContingency tables\n📑\nStatistics\n\n\n\n\nTue, Apr 8\nExploratory Data Analysis (numerical data)\nScatter plot\n📑\nStatistics\n\n\n\n\nTue, Apr 8\nExploratory Data Analysis (numerical data)\nMean Median and Mode\n📑\nStatistics\n\n\n5\nTue, Apr 15\nData Analysis with Excel and Pandas\nData Analysis (survey data df_clean)\n\n\nMarket Research\n\n\n\n\nTue, Apr 15\nExploratory Data Analysis (numerical data)\nVariance and standard deviation\n📑\nMarket Research\n\n\n\n\nTue, Apr 15\nExploratory Data Analysis (numerical data)\nHistogram\n📑\nStatistics\n\n\n\n\nTue, Apr 15\nExploratory Data Analysis\nBox plot\n📑\nStatistics\n\n\n6\nTue, Apr 22\nExploratory Data Analysis\nRobust statistics and transformations\n📑\nMarket Research\n\n\n\n\nTue, Apr 22\nExploratory Data Analysis\nComparing numerical data across groups\n📑\nMarket Research\n\n\n\n\nTue, Apr 22\nExploratory Data Analysis\nCommunication\n📑\nStatistics\n\n\n7\nTue, May 6\nRegression Modelling\nSales and ads\n📑\nMarket Research\n\n\n\n\nTue, May 6\nRegression Modelling\nMean squared error\n📑\nMarket Research\n\n\n\n\nTue, May 6\nE-exam preparation\nE-exam preparation\nMoodle\nStatistics\n\n\n8\nTue, May 13\nRegression Modelling\nExample task with data ads 2\nSee weekly overview\nStatistics\n\n\n\n\nTue, May 13\nRegression Modelling\nFitting a line and residuals\n📑\nStatistics\n\n\n\n\nTue, May 13\nRegression Modelling\nCorrelation\n📑\nMarket Research\n\n\n\n\nTue, May 13\nRegression Modelling\nLeast squares regression\n📑\nMarket Research\n\n\n9\nTue, May 20\nRegression Modelling\nR squared (strenght of fit)\n📑\n\n\n\n\n\n\nTue, May 20\nRegression Modelling\nCategorical predictors with two levels\n📑",
+    "crumbs": [
+      "Home",
+      "Course information",
+      "Semester Overview"
+    ]
+  },
+  {
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "Syllabus",
+    "section": "",
+    "text": "Lecture\nDay\nTime\nLocation\n\n\n\n\nMarket Research\nTuesday\n08:15 - 09:45\nm034\n\n\nStatistics\nTuesday\n10:00 - 11:30\nm034",
+    "crumbs": [
+      "Home",
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#course-info",
+    "href": "syllabus.html#course-info",
+    "title": "Syllabus",
+    "section": "",
+    "text": "Lecture\nDay\nTime\nLocation\n\n\n\n\nMarket Research\nTuesday\n08:15 - 09:45\nm034\n\n\nStatistics\nTuesday\n10:00 - 11:30\nm034",
+    "crumbs": [
+      "Home",
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#learning-objectives",
+    "href": "syllabus.html#learning-objectives",
+    "title": "Syllabus",
+    "section": "Learning objectives",
+    "text": "Learning objectives\nBy the end of this module, students are able to:\n\nEffectively plan and execute market research projects\nUtilize tools like Excel and Python for data analysis\nClearly and effectively communicate results\nConduct experiments and hypothesis tests",
+    "crumbs": [
+      "Home",
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#textbooks",
+    "href": "syllabus.html#textbooks",
+    "title": "Syllabus",
+    "section": "Textbooks",
+    "text": "Textbooks\nThis course is mainly based on the following resources:\n\nÇetinkaya-Rundel, M. & Hardin, J (2024). Introduction to Modern Statistics (2ed). OpenIntro. Inc.\nKnaflic, C. N. (2015). Storytelling with data: A data visualization guide for business professionals. Wiley.",
+    "crumbs": [
+      "Home",
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#where-to-get-help",
+    "href": "syllabus.html#where-to-get-help",
+    "title": "Syllabus",
+    "section": "Where to get help",
+    "text": "Where to get help\n\nIf you have a question during lecture, feel free to ask it!\nOutside of class, any general questions about course content or assignments should be posted on the Moodle course forum.\nEmails should be reserved for questions not appropriate for the public forum. If you email me, please include the name of our course in the subject line.\n\n\nExam\nElectronic exam (90 minutes) at the end of the semester. 60% market research and 40% statistics.\nMore details about the electronic exam will be given during the semester.",
+    "crumbs": [
+      "Home",
+      "Course information",
+      "Syllabus"
     ]
   }
 ]
