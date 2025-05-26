@@ -338,7 +338,7 @@ df = pd.read_csv('https://raw.githubusercontent.com/kirenz/datasets/master/loans
 ```
 
 
-
+<!-- 
 ### Multiple Regression Example Mario Kart
 
 ```python
@@ -361,4 +361,4 @@ Data preparation steps
 - make a copy of our original dataframe (before we change the data). Call it df_orig
 - Convert categorical into binary numeric format (`.get_dummies()`)
 - we only keep condition new (1=new and 0=used)
-
+ -->
