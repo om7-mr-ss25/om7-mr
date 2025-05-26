@@ -268,7 +268,6 @@ window.Quarto = {
   <li><a href="#week-10" id="toc-week-10" class="nav-link" data-scroll-target="#week-10">Week 10</a>
   <ul class="collapse">
   <li><a href="#multiple-regression-with-loans-data" id="toc-multiple-regression-with-loans-data" class="nav-link" data-scroll-target="#multiple-regression-with-loans-data">Multiple Regression with loans data</a></li>
-  <li><a href="#multiple-regression-example-mario-kart" id="toc-multiple-regression-example-mario-kart" class="nav-link" data-scroll-target="#multiple-regression-example-mario-kart">Multiple Regression Example Mario Kart</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -588,26 +587,30 @@ Download the data as Excel-file; [Data](https://docs.google.com/spreadsheets/d/1
 <span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">'https://raw.githubusercontent.com/kirenz/datasets/master/loans.csv'</span>)</span>
 <span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="multiple-regression-example-mario-kart" class="level3">
-<h3 class="anchored" data-anchor-id="multiple-regression-example-mario-kart">Multiple Regression Example Mario Kart</h3>
-<div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> altair <span class="im">as</span> alt</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LinearRegression</span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> mean_squared_error</span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> r2_score</span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">'https://raw.githubusercontent.com/kirenz/datasets/master/mariokart.csv'</span>)</span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Data preparation steps</p>
-<ul>
-<li>we only need <code>cond</code> and <code>total_pr</code></li>
-<li>only keep games with total price below 100</li>
-<li>make a copy of our original dataframe (before we change the data). Call it df_orig</li>
-<li>Convert categorical into binary numeric format (<code>.get_dummies()</code>)</li>
-<li>we only keep condition new (1=new and 0=used)</li>
-</ul>
+<!-- 
+### Multiple Regression Example Mario Kart
+
+```python
+import pandas as pd
+import altair as alt
+
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error
+from sklearn.metrics import r2_score
+
+df = pd.read_csv('https://raw.githubusercontent.com/kirenz/datasets/master/mariokart.csv')
+
+
+```
+
+Data preparation steps
+
+- we only need `cond` and `total_pr`
+- only keep games with total price below 100
+- make a copy of our original dataframe (before we change the data). Call it df_orig
+- Convert categorical into binary numeric format (`.get_dummies()`)
+- we only keep condition new (1=new and 0=used)
+ -->
 
 
 </section>
