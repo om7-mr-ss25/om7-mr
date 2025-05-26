@@ -312,6 +312,12 @@ chart + chart.transform_regression('ads', 'sales', extent=[0, 12000]).mark_line(
 
 ```
 
+###
+
+
+**Data**: [Download the data as CSV](https://docs.google.com/spreadsheets/d/1r76Qa87HicgHV2ZVFaVBGQnn5WwZPIVRyqYxu2yS7_s/edit?usp=sharing)
+
+
 ### Mario Kart
 
 ```python
