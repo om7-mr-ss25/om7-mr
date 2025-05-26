@@ -318,7 +318,28 @@ chart + chart.transform_regression('ads', 'sales', extent=[0, 12000]).mark_line(
 **Data**: [Download the data as CSV](https://docs.google.com/spreadsheets/d/1r76Qa87HicgHV2ZVFaVBGQnn5WwZPIVRyqYxu2yS7_s/edit?usp=sharing)
 
 
-### Mario Kart
+
+## Week 10
+
+
+### Multiple Regression with loans data
+
+
+```python
+import pandas as pd
+
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error
+
+df = pd.read_csv('https://raw.githubusercontent.com/kirenz/datasets/master/loans.csv')
+
+
+
+```
+
+
+
+### Multiple Regression Example Mario Kart
 
 ```python
 import pandas as pd
@@ -335,24 +356,9 @@ df = pd.read_csv('https://raw.githubusercontent.com/kirenz/datasets/master/mario
 
 Data preparation steps
 
-- we only need cond and total_pr
+- we only need `cond` and `total_pr`
 - only keep games with total price below 100
 - make a copy of our original dataframe (before we change the data). Call it df_orig
 - Convert categorical into binary numeric format (`.get_dummies()`)
 - we only keep condition new (1=new and 0=used)
 
-
-### Multiple Regression 
-
-
-```python
-import pandas as pd
-
-from sklearn.linear_model import LinearRegression
-from sklearn.metrics import mean_squared_error
-
-df = pd.read_csv('https://raw.githubusercontent.com/kirenz/datasets/master/loans.csv')
-
-
-
-```
