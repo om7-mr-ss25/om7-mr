@@ -112,7 +112,19 @@
     "href": "semester.html#week-10",
     "title": "Weekly overview",
     "section": "Week 10",
-    "text": "Week 10\n\nTask in Google Docs\n\n\nMultiple Regression with Excel\nData: Download the data to Excel\n\nOpen the data in Excel\nIn the file menu: open Extras\nOpen Excel Add-Ins and select Analyse-Funktionen\n\nCreate a multiple regression where we predict Conversion:\n\nOpen Extras and select Daten-Analyse\nSelect Regression\n\nInput Y Range: $F\\(1:\\)F$201\nInput X Range: $B\\(1:\\)E$201\nSelect: Labels\nSelect: Residual Plots\nPress OK\n\n\nImportant results:\n\nR Square\nCoefficients\n\n\n\nMultiple Regression with Python\nData: Download the data to CSV\nPerform a multiple regression:\nimport pandas as pd\n\nfrom sklearn.linear_model import LinearRegression\nfrom sklearn.metrics import mean_squared_error\n\ndf = pd.read_csv('https://raw.githubusercontent.com/kirenz/datasets/master/loans.csv')",
+    "text": "Week 10\n\nTask in Google Docs\n\n\nMultiple Regression with Excel\nFinding Regression Options in Excel\nOn Mac (as you correctly described):\n\nTools → Add-Ins → Data Analysis → Regression\n\nOn Windows:\n\nData → Data Analysis → Regression\n\nIf “Data Analysis” is not visible: You need to first activate the Analysis ToolPak:\nMac:\n\nTools → Add-Ins → Check “Analysis ToolPak” → OK\n\nWindows:\n\nFile → Options → Add-Ins → Select “Excel Add-ins” under “Manage” → Go → Check “Analysis ToolPak” → OK\n\nAfter activation, the “Data Analysis” option will appear in the ribbon, where you can find various statistical analysis tools including regression.",
+    "crumbs": [
+      "Home",
+      "Course information",
+      "Weekly Overview"
+    ]
+  },
+  {
+    "objectID": "semester.html#alternative",
+    "href": "semester.html#alternative",
+    "title": "Weekly overview",
+    "section": "Alternative:",
+    "text": "Alternative:\nYou can also use the =LINEST() function directly if you want to perform a simple linear regression without using the Data Analysis tool.\nData: Download the data to Excel\n\nOpen the data in Excel\nIn the file menu: open Extras\nOpen Excel Add-Ins and select Analyse-Funktionen\n\nCreate a multiple regression where we predict Conversion:\n\nOpen Extras and select Daten-Analyse\nSelect Regression\n\nInput Y Range: $F\\(1:\\)F$201\nInput X Range: $B\\(1:\\)E$201\nSelect: Labels\nSelect: Residual Plots\nPress OK\n\n\nImportant results:\n\nR Square\nCoefficients\n\n\nMultiple Regression with Python\nData: Download the data to CSV\nPerform a multiple regression:\nimport pandas as pd\n\nfrom sklearn.linear_model import LinearRegression\nfrom sklearn.metrics import mean_squared_error\n\ndf = pd.read_csv('https://raw.githubusercontent.com/kirenz/datasets/master/loans.csv')",
     "crumbs": [
       "Home",
       "Course information",

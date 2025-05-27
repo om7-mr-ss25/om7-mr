@@ -268,6 +268,9 @@ window.Quarto = {
   <li><a href="#week-10" id="toc-week-10" class="nav-link" data-scroll-target="#week-10">Week 10</a>
   <ul class="collapse">
   <li><a href="#multiple-regression-with-excel" id="toc-multiple-regression-with-excel" class="nav-link" data-scroll-target="#multiple-regression-with-excel">Multiple Regression with Excel</a></li>
+  </ul></li>
+  <li><a href="#alternative" id="toc-alternative" class="nav-link" data-scroll-target="#alternative">Alternative:</a>
+  <ul class="collapse">
   <li><a href="#multiple-regression-with-python" id="toc-multiple-regression-with-python" class="nav-link" data-scroll-target="#multiple-regression-with-python">Multiple Regression with Python</a></li>
   </ul></li>
   </ul>
@@ -583,6 +586,30 @@ Download the data as Excel-file; [Data](https://docs.google.com/spreadsheets/d/1
 </ul>
 <section id="multiple-regression-with-excel" class="level3">
 <h3 class="anchored" data-anchor-id="multiple-regression-with-excel">Multiple Regression with Excel</h3>
+<p>Finding Regression Options in Excel</p>
+<p>On Mac (as you correctly described):</p>
+<ul>
+<li><strong>Tools</strong> → <strong>Add-Ins</strong> → <strong>Data Analysis</strong> → <strong>Regression</strong></li>
+</ul>
+<p>On Windows:</p>
+<ul>
+<li><strong>Data</strong> → <strong>Data Analysis</strong> → <strong>Regression</strong></li>
+</ul>
+<p>If “Data Analysis” is not visible: You need to first activate the Analysis ToolPak:</p>
+<p>Mac:</p>
+<ul>
+<li><strong>Tools</strong> → <strong>Add-Ins</strong> → Check “Analysis ToolPak” → <strong>OK</strong></li>
+</ul>
+<p>Windows:</p>
+<ul>
+<li><strong>File</strong> → <strong>Options</strong> → <strong>Add-Ins</strong> → Select “Excel Add-ins” under “Manage” → <strong>Go</strong> → Check “Analysis ToolPak” → <strong>OK</strong></li>
+</ul>
+<p>After activation, the “Data Analysis” option will appear in the ribbon, where you can find various statistical analysis tools including regression.</p>
+</section>
+</section>
+<section id="alternative" class="level2">
+<h2 class="anchored" data-anchor-id="alternative">Alternative:</h2>
+<p>You can also use the <code>=LINEST()</code> function directly if you want to perform a simple linear regression without using the Data Analysis tool.</p>
 <p><strong>Data</strong>: <a href="https://docs.google.com/spreadsheets/d/1r76Qa87HicgHV2ZVFaVBGQnn5WwZPIVRyqYxu2yS7_s/edit?usp=sharing">Download the data to Excel</a></p>
 <ul>
 <li>Open the data in Excel</li>
@@ -606,7 +633,6 @@ Download the data as Excel-file; [Data](https://docs.google.com/spreadsheets/d/1
 <li>R Square</li>
 <li>Coefficients</li>
 </ul>
-</section>
 <section id="multiple-regression-with-python" class="level3">
 <h3 class="anchored" data-anchor-id="multiple-regression-with-python">Multiple Regression with Python</h3>
 <p><strong>Data</strong>: <a href="https://docs.google.com/spreadsheets/d/1r76Qa87HicgHV2ZVFaVBGQnn5WwZPIVRyqYxu2yS7_s/edit?usp=sharing">Download the data to CSV</a></p>
