@@ -373,6 +373,7 @@ Important results:
 
 - R Square
 - Coefficients
+
 <!-- 
 ### Multiple Regression with Python
 
@@ -417,3 +418,10 @@ Data preparation steps
 - Convert categorical into binary numeric format (`.get_dummies()`)
 - we only keep condition new (1=new and 0=used)
  -->
+
+
+### Discussion of Exercises
+
+- [Chapter 2 (Study Design), Exercise 15 e)](https://claude.ai/public/artifacts/f8213aae-ff52-412e-b54b-1dc550951a83)
+
+- [Chapter 5 (Exploring numerical data), Exercise 11](https://claude.ai/public/artifacts/1b78d8cf-c2cd-4ae5-a1b5-05567933736e)
