@@ -323,7 +323,37 @@ chart + chart.transform_regression('ads', 'sales', extent=[0, 12000]).mark_line(
 
 - [Task in Google Docs](https://docs.google.com/document/d/1LqVUNyrFmkc0J2CtDwzQGRyiSexXGr8vS-t2B9hPsAw/edit?usp=sharing) 
 
+
+
+
+
 ### Multiple Regression with Excel
+
+Finding Regression Options in Excel
+
+On Mac (as you correctly described):
+
+- **Tools** → **Add-Ins** → **Data Analysis** → **Regression**
+
+On Windows:
+
+- **Data** → **Data Analysis** → **Regression**
+
+If "Data Analysis" is not visible: You need to first activate the Analysis ToolPak:
+
+Mac:
+
+- **Tools** → **Add-Ins** → Check "Analysis ToolPak" → **OK**
+
+Windows:
+
+- **File** → **Options** → **Add-Ins** → Select "Excel Add-ins" under "Manage" → **Go** → Check "Analysis ToolPak" → **OK**
+
+After activation, the "Data Analysis" option will appear in the ribbon, where you can find various statistical analysis tools including regression.
+
+## Alternative:
+You can also use the `=LINEST()` function directly if you want to perform a simple linear regression without using the Data Analysis tool.
+
 
 **Data**: [Download the data to Excel](https://docs.google.com/spreadsheets/d/1r76Qa87HicgHV2ZVFaVBGQnn5WwZPIVRyqYxu2yS7_s/edit?usp=sharing)
 
