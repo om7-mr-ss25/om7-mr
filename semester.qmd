@@ -331,7 +331,7 @@ chart + chart.transform_regression('ads', 'sales', extent=[0, 12000]).mark_line(
 
 Finding Regression Options in Excel
 
-On Mac (as you correctly described):
+On Mac:
 
 - **Tools** → **Add-Ins** → **Data Analysis** → **Regression**
 
@@ -373,7 +373,7 @@ Important results:
 
 - R Square
 - Coefficients
-
+<!-- 
 ### Multiple Regression with Python
 
 **Data**: [Download the data to CSV](https://docs.google.com/spreadsheets/d/1r76Qa87HicgHV2ZVFaVBGQnn5WwZPIVRyqYxu2yS7_s/edit?usp=sharing)
@@ -391,7 +391,7 @@ from sklearn.metrics import mean_squared_error
 df = pd.read_csv('https://raw.githubusercontent.com/kirenz/datasets/master/loans.csv')
 
 ```
-
+ -->
 
 <!-- 
 ### Multiple Regression Example Mario Kart
