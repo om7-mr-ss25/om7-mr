@@ -267,7 +267,8 @@ window.Quarto = {
   </ul></li>
   <li><a href="#week-10" id="toc-week-10" class="nav-link" data-scroll-target="#week-10">Week 10</a>
   <ul class="collapse">
-  <li><a href="#multiple-regression-with-loans-data" id="toc-multiple-regression-with-loans-data" class="nav-link" data-scroll-target="#multiple-regression-with-loans-data">Multiple Regression with loans data</a></li>
+  <li><a href="#multiple-regression-with-excel" id="toc-multiple-regression-with-excel" class="nav-link" data-scroll-target="#multiple-regression-with-excel">Multiple Regression with Excel</a></li>
+  <li><a href="#multiple-regression-with-python" id="toc-multiple-regression-with-python" class="nav-link" data-scroll-target="#multiple-regression-with-python">Multiple Regression with Python</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -577,16 +578,45 @@ Download the data as Excel-file; [Data](https://docs.google.com/spreadsheets/d/1
 </section>
 <section id="week-10" class="level2">
 <h2 class="anchored" data-anchor-id="week-10">Week 10</h2>
-<section id="multiple-regression-with-loans-data" class="level3">
-<h3 class="anchored" data-anchor-id="multiple-regression-with-loans-data">Multiple Regression with loans data</h3>
+<ul>
+<li><a href="https://docs.google.com/document/d/1LqVUNyrFmkc0J2CtDwzQGRyiSexXGr8vS-t2B9hPsAw/edit?usp=sharing">Task in Google Docs</a></li>
+</ul>
+<section id="multiple-regression-with-excel" class="level3">
+<h3 class="anchored" data-anchor-id="multiple-regression-with-excel">Multiple Regression with Excel</h3>
+<p><strong>Data</strong>: <a href="https://docs.google.com/spreadsheets/d/1r76Qa87HicgHV2ZVFaVBGQnn5WwZPIVRyqYxu2yS7_s/edit?usp=sharing">Download the data to Excel</a></p>
+<ul>
+<li>Open the data in Excel</li>
+<li>In the file menu: open <code>Extras</code></li>
+<li>Open Excel <code>Add-Ins</code> and select <code>Analyse-Funktionen</code></li>
+</ul>
+<p>Create a multiple regression where we predict Conversion:</p>
+<ul>
+<li>Open Extras and select <code>Daten-Analyse</code></li>
+<li>Select Regression
+<ul>
+<li>Input Y Range: $F<span class="math inline">\(1:\)</span>F$201</li>
+<li>Input X Range: $B<span class="math inline">\(1:\)</span>E$201</li>
+<li>Select: <code>Labels</code></li>
+<li>Select: <code>Residual Plots</code></li>
+<li>Press <code>OK</code></li>
+</ul></li>
+</ul>
+<p>Important results:</p>
+<ul>
+<li>R Square</li>
+<li>Coefficients</li>
+</ul>
+</section>
+<section id="multiple-regression-with-python" class="level3">
+<h3 class="anchored" data-anchor-id="multiple-regression-with-python">Multiple Regression with Python</h3>
+<p><strong>Data</strong>: <a href="https://docs.google.com/spreadsheets/d/1r76Qa87HicgHV2ZVFaVBGQnn5WwZPIVRyqYxu2yS7_s/edit?usp=sharing">Download the data to CSV</a></p>
+<p>Perform a multiple regression:</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LinearRegression</span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> mean_squared_error</span>
 <span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">'https://raw.githubusercontent.com/kirenz/datasets/master/loans.csv'</span>)</span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">'https://raw.githubusercontent.com/kirenz/datasets/master/loans.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <!-- 
 ### Multiple Regression Example Mario Kart
 
