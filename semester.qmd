@@ -324,9 +324,6 @@ chart + chart.transform_regression('ads', 'sales', extent=[0, 12000]).mark_line(
 - [Task in Google Docs](https://docs.google.com/document/d/1LqVUNyrFmkc0J2CtDwzQGRyiSexXGr8vS-t2B9hPsAw/edit?usp=sharing) 
 
 
-
-
-
 ### Multiple Regression with Excel
 
 Finding Regression Options in Excel
@@ -425,3 +422,13 @@ Data preparation steps
 - [Chapter 2 (Study Design), Exercise 15](https://claude.ai/public/artifacts/f8213aae-ff52-412e-b54b-1dc550951a83)
 
 - [Chapter 5 (Exploring numerical data), Exercise 11](https://claude.ai/public/artifacts/1b78d8cf-c2cd-4ae5-a1b5-05567933736e)
+
+
+## Week 11
+
+### Analyze discrimination data
+
+Analyse the [data](https://docs.google.com/spreadsheets/d/10hoNBTVFlgspWbH34VVqkq5YTB2-nz1GD1Tz5ldEPBY/edit?usp=sharing) in Excel.
+
+Calaculate the test statistic (difference in promotion rates) 
+
